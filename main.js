@@ -580,10 +580,10 @@ class Deyeidc extends utils.Adapter {
 		this.log.debug(`checkUserData is ready`);
 		return;
 		//
-		function validateIPorDomain(input) {
+		function validateIPorDomain(ip) {
     			const ipPattern = /^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]?)$/;
     			const domainPattern = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)+[a-zA-Z]{2,}$/;
-    			return ipPattern.test(input) || domainPattern.test(input);
+    			return ipPattern.test(ip) || domainPattern.test(ip);
 			}
 		function validateIP(ip) {
 			const pattern = /^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
